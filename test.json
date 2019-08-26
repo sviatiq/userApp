@@ -1,0 +1,23 @@
+[
+  {
+    "name": "S",
+    "surname": "K",
+    "email": "s@k.g",
+    "role": "USER",
+    "cellphone": "380988101723"
+  },
+  {
+    "name": "Sviat",
+    "surname": "Kogut",
+    "email": "sviat@g.",
+    "role": "ADMIN",
+    "cellphone": "3809881018273"
+  },
+  {
+    "name": "Алина",
+    "surname": "Иванова",
+    "email": "aliv@s.f",
+    "role": "MANAGER",
+    "cellphone": "380954218543"
+  }
+]
