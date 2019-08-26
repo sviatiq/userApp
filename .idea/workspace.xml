@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4c1c67d-ff0c-4f12-9ca6-a7834f1475cf" name="Default Changelist" comment="" />
+    <list default="true" id="d4c1c67d-ff0c-4f12-9ca6-a7834f1475cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/ServiceClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/userapp.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logic/ServiceClass$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logic/ServiceClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/runner/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runner/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,16 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/runner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="162" column="48" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="48" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/ServiceClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#userInformation#0;class#Main#0" />
-                <element signature="method#setUser#0;class#Main#0" />
-                <element signature="method#writeAndRead#0;class#Main#0" />
+                <element signature="method#getInfoFromUser#0;class#ServiceClass#0" />
+                <element signature="method#setUser#0;class#ServiceClass#0" />
+                <element signature="method#deleteMail#0;class#ServiceClass#0" />
               </folding>
             </state>
           </provider>
@@ -39,31 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -76,10 +85,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/runner/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/ServiceClass.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="725" />
@@ -123,7 +133,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="userapp" type="b2602c69:ProjectViewProjectNode" />
@@ -147,9 +157,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566827882671" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566835481580" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -234,7 +245,7 @@
       <workItem from="1566730705181" duration="8292000" />
       <workItem from="1514765198379" duration="492000" />
       <workItem from="1514771456230" duration="1707000" />
-      <workItem from="1514770192556" duration="8996000" />
+      <workItem from="1514770192556" duration="12142000" />
     </task>
     <servers />
   </component>
@@ -250,13 +261,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46856000" />
+    <option name="totallyTimeSpent" value="50002000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="725" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584814" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2584814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -264,8 +274,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2827804" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328594" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2827804" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17462933" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,16 +338,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
+        <state relative-caret-position="481">
           <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -345,15 +348,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/runner/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="162" column="48" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/ServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#userInformation#0;class#Main#0" />
-            <element signature="method#setUser#0;class#Main#0" />
-            <element signature="method#writeAndRead#0;class#Main#0" />
+            <element signature="method#getInfoFromUser#0;class#ServiceClass#0" />
+            <element signature="method#setUser#0;class#ServiceClass#0" />
+            <element signature="method#deleteMail#0;class#ServiceClass#0" />
           </folding>
         </state>
       </provider>
