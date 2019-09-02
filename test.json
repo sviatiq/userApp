@@ -1,37 +1,9 @@
-[
-  {
-    "name": "S",
+{
+  "sviat@gmail.com": {
+    "name": "Sviatoslav",
     "surname": "K",
-    "email": "s@k.g",
-    "role": "USER",
-    "cellphone": "380988101723"
-  },
-  {
-    "name": "Sviat",
-    "surname": "Kogut",
-    "email": "sviat@g.",
-    "role": "ADMIN",
-    "cellphone": "3809881018273"
-  },
-  {
-    "name": "Алина",
-    "surname": "Иванова",
-    "email": "aliv@s.f",
-    "role": "MANAGER",
-    "cellphone": "380954218543"
-  },
-  {
-    "name": "Sviat",
-    "surname": "Kogut",
     "email": "sviat@gmail.com",
-    "role": "USER",
-    "cellphone": "380988101725"
-  },
-  {
-    "name": "sviat",
-    "surname": "kogut",
-    "email": "sviat@mail.com",
     "role": "MANAGER",
-    "cellphone": "380976543211"
+    "cellphone": "380980000000"
   }
-]
+}
