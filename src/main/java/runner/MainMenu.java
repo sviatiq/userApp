@@ -1,23 +1,22 @@
 package runner;
 
 import domain.User;
-import logic.ServiceClass;
-import logic.UserService;
-import logic.UserServiceImpl;
+import logic.WriterClass;
+import service.UserService;
+import service.UserServiceImpl;
 
 import java.util.Scanner;
 
 public class MainMenu {
     private UserService userService = new UserServiceImpl();
-    private ServiceClass serviceClass = new ServiceClass();
+    private WriterClass writerClass = new WriterClass();
     private Scanner scanner = new Scanner(System.in);
 
     public void startMenu() {
         String mail;
         boolean active = true;
 
-
-        serviceClass.readFromFile();
+        writerClass.readFromFile();
 
         while (active) {
             System.out.println("LetsCode! Choose: ");
@@ -31,25 +30,25 @@ public class MainMenu {
             switch (userChoose) {
                 case "/add":
                     User user = userService.addUser();
-                    serviceClass.writeToFile(user);
+                    writerClass.writeToFile(user);
                     break;
                 case "/edit":
                     System.out.println("Type email, that must be edit: ");
                     mail = scanner.nextLine();
-                    User user1 = serviceClass.getUsers().get(mail);
+                    User user1 = writerClass.getUsers().get(mail);
                     User newUser = userService.changeUser(user1);
-                    serviceClass.getUsers().remove(mail);
-                    serviceClass.getUsers().put(newUser.getEmail(), newUser);
-                    serviceClass.rewriteFile(serviceClass.getUsers());
+                    writerClass.getUsers().remove(mail);
+                    writerClass.getUsers().put(newUser.getEmail(), newUser);
+                    writerClass.rewriteFile(writerClass.getUsers());
                     break;
                 case "/delete":
                     System.out.println("Type email, that must be deleted: ");
                     mail = scanner.nextLine();
-                    userService.deleteByEmail(mail, serviceClass.getUsers());
-                    serviceClass.rewriteFile(serviceClass.getUsers());
+                    userService.deleteByEmail(mail, writerClass.getUsers());
+                    writerClass.rewriteFile(writerClass.getUsers());
                 case "/show":
-                    if (!serviceClass.getUsers().isEmpty()) {
-                        serviceClass.showUserInformation(serviceClass.getUsers());
+                    if (!writerClass.getUsers().isEmpty()) {
+                        writerClass.showUserInformation(writerClass.getUsers());
                     } else {
                         System.out.println("User's list is empty!");
                     }

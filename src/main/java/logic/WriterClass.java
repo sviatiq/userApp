@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ServiceClass {
+public class WriterClass {
 
     private final static String userDir = System.getProperty("user.dir");
     private final static String filename = "test.json";
@@ -26,7 +26,7 @@ public class ServiceClass {
     public void writeToFile(User user) {
         boolean exists = Files.exists(path);
         if (exists) {
-            try (Writer writer = new FileWriter(filename)) {
+            try (Writer writer = new java.io.FileWriter(filename)) {
                 users.put(user.getEmail(), user);
                 gson.toJson(users, writer);
 
@@ -34,7 +34,7 @@ public class ServiceClass {
                 e.printStackTrace();
             }
         } else {
-            try (Writer writer = new FileWriter(filename)) {
+            try (Writer writer = new java.io.FileWriter(filename)) {
                 gson.toJson(Collections.singleton(user), writer);
             } catch (IOException e) {
                 e.printStackTrace();

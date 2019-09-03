@@ -1,9 +1,12 @@
 {
   "sviat@gmail.com": {
-    "name": "Sviatoslav",
-    "surname": "K",
+    "name": "Sviat",
+    "surname": "Kogut",
     "email": "sviat@gmail.com",
-    "role": "MANAGER",
-    "cellphone": "380980000000"
+    "roles": [
+      "USER",
+      "ADMIN"
+    ],
+    "cellphone": "380967077707"
   }
 }

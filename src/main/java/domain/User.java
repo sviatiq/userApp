@@ -1,25 +1,22 @@
 package domain;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.Set;
 
 public class User {
     private String name;
     private String surname;
     private String email;
-    private Role role;
+    private Set<Role> roles;
     private String cellphone;
 
     public User() {
     }
 
-    public User(String name, String surname, String email, Role role, String cellphone) {
+    public User(String name, String surname, String email, Set<Role> roles, String cellphone) {
         this.name = name;
         this.surname = surname;
         this.email = email;
-        this.role = role;
+        this.roles = roles;
         this.cellphone = cellphone;
     }
 
@@ -47,12 +44,12 @@ public class User {
         this.email = email;
     }
 
-    public Role getRole() {
-        return role;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
     public String getCellphone() {
@@ -69,7 +66,7 @@ public class User {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
-                ", role=" + role +
+                ", roles=" + roles +
                 ", cellphone='" + cellphone + '\'' +
                 '}';
     }
